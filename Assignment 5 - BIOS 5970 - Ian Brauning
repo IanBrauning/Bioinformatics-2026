@@ -1,0 +1,9 @@
+3) MUSCLE alignment command:
+muscle -seqtype protein -in infile.fasta -maxiters 16 -hydro 5 -hydrofactor 1.2 -log logfile.txt -weight1 clustalw -distance1 kmer6_6 -cluster1 upgmb -sueff 0.1 -root1 pseudo -maxtrees 1 -weight2 clustalw -distance2 pctidkimura -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -out output.fasta
+
+RAxML tree command:
+raxmlHPC-HYBRID-AVX -T 4 -f a -N autoMRE -n Bats-Newick -s infile.txt -c 25 -p 12345 -m PROTCATDAYHOFF -x 12345
+
+4) The species most closely related to the Flying Fox (Pteropus lylei) are Syconycteris australis and Dobsonia viridis. The next closest relatives seem to be Cynopterus sphinx and Rousettus leschenaultii, all within the Pteropodidae family.
+
+5) ACE2 is the receptor SARS-CoV-2 uses to enter human cells. Bats are a known reservoir host for coronaviruses, so understanding which bat species have ACE2 sequences most similar to humans helps identify potential intermediate hosts for future spillover events, which is critical for pandemic preparedness.
